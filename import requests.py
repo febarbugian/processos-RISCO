@@ -2,12 +2,12 @@ import requests
 from openpyxl import Workbook
 
 def obter_ultima_operacao(cliente):
-    url = f"http://10.204.5.28:8080/ultima-operacao?cliente={cliente}"
+    url = f"exemplo_url/{cliente}"
     resposta = requests.get(url)
     dados = resposta.json()
     return dados
 
-clientes = [11994, 95973]  
+clientes = [123, 345]  
 
 # Criar uma nova pasta de trabalho do Excel
 wb = Workbook()
